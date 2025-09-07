@@ -590,3 +590,89 @@ font-size: 3.5rem;
   font-size: 18px;
 
 }
+
+/* client */
+            section.clients {
+              padding: 80px 0;
+              background: #fff;
+            }
+      
+            section.clients h6 {
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: 2px;
+              color: #17375d;
+              text-transform: uppercase;
+              position: relative;
+              display: inline-block;
+              padding-left: 40px;
+            }
+      
+            section.clients h6::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 30px;
+              height: 2px;
+              background: #17375d;
+              transform: translateY(-50%);
+            }
+      
+            section.clients h2 {
+              font-size: 38px;
+              font-weight: 700;
+              color: #082c5b;
+              margin: 20px 0 60px;
+            }
+      
+            /* Swiper Styling */
+            .swiper {
+              width: 100%;
+              padding-top: 40px;
+              padding-bottom: 80px;
+            }
+      
+            .swiper-slide {
+              
+              background: #073b7a;
+              border-radius: 15px;
+              text-align: center;
+              font-weight: bold;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 220px;
+              height: 140px;
+              color: #fff;
+            }
+      
+            .swiper-slide h4 {
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+      
+            .swiper-slide p {
+              font-size: 14px;
+              margin: 0;
+              color: #b8c4d4;
+              font-weight: 400;
+            }
+      
+            /* Navigation buttons */
+            .swiper-button-next,
+            .swiper-button-prev {
+              background: #fff;
+              border-radius: 6px;
+              width: 40px;
+              height: 40px;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            }
+      
+            .swiper-button-next::after,
+            .swiper-button-prev::after {
+              font-size: 16px;
+              color: #082c5b;
+              font-weight: bold;
+            }

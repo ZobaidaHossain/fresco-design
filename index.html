@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -180,6 +181,104 @@
 
 <!--  -->
 
+<!-- client -->
+<section class="clients text-center">
+  <div class="container">
+    <h6>OUR CLIENTS</h6>
+    <h2>Some friends have made while working together .</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="p-5">
+ <h4>JETRO 1</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+         
+        </div>
+        <div class="swiper-slide">
+          <div class="p-5">
+ <h4>JETRO 2</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+           <div class="p-5">
+ <h4>JETRO 3</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-5">
+ <h4>JETRO 4</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="p-5">
+ <h4>JETRO 5</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+           <div class="p-5">
+ <h4>JETRO 6</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+         <div class="swiper-slide">
+           <div class="p-5">
+ <h4>JETRO 7</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+         <div class="swiper-slide">
+           <div class="p-5">
+ <h4>JETRO 8</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+          <div class="swiper-slide">
+           <div class="p-5">
+ <h4>JETRO 8</h4>
+          <p>Japan External Trade Organization</p>
+          </div>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div  class="swiper-button-prev" style="padding: 2rem;
+    border-radius: 2rem;"></div>
+      <div class="swiper-button-next" style="padding: 2rem;
+    border-radius: 2rem;"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 5,   // shows 5 cards at a time
+    loop: true,
+    coverflowEffect: {
+      rotate: 35,       // rotation of side slides
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+</script>
 <script>
   // Using vanilla JS
 window.addEventListener('scroll', function() {
