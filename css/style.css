@@ -936,6 +936,7 @@ text-align: center;
 border: 2px solid #0A0A2A;
 border-radius: 10px;
 
+
 }
 
 .btn-gradient {
@@ -1071,3 +1072,105 @@ border-radius: 10px;
 
 }
 
+
+
+
+/* project */
+    .project-section {
+      padding: 60px 0;
+    }
+
+    .filter-btns {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .filter-btns .btn {
+      border-radius: 50px;
+      padding: 8px 25px;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .filter-btns .btn.active {
+      background-color: #1f3a93;
+      color: #fff;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 22rem;
+       border-width: 10px 4px;
+border-radius: 60px 10px;
+    }
+
+    .project-card-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 15px;
+border-radius: 28px 10px;
+      max-width: 80%;
+    }
+
+    .project-card-info h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .project-card-info p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .view-all-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .view-all-btn .btn {
+      border-radius: 50px;
+      padding: 10px 30px;
+      background-color: #1f3a93;
+      color: #fff;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .view-all-btn .btn:hover {
+      background-color: #162e70;
+    }
+
+    .brand{
+          position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 15px;
+border-radius: 28px 10px;
+      max-width: 80%;
+    }
+    .brand img{
+          width: 12rem;
+    height: 3rem;
+    }
