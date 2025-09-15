@@ -754,7 +754,19 @@ section.clients h2 {
 
 /* Card */
 .client-card {
-  background: #073b7a;
+background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  /* padding: 20px; */
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* subtle shadow */
+  /* background: #073b7a;
   border-radius: 15px;
   text-align: center;
   padding: 20px;
@@ -763,7 +775,7 @@ section.clients h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .client-card:hover {
@@ -773,13 +785,20 @@ section.clients h2 {
 
 /* Logo */
 .client-logo {
-  width: 10rem;
+      width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+        /* margin-bottom: 12px; */
+        background: #fff;
+        border-radius: 50%;
+        /* padding: 8px;
+  /* width: 10rem;
   height: 10rem;
   object-fit: contain;
   margin-bottom: 12px;
   background: #fff;
   border-radius: 50%;
-  padding: 8px;
+  padding: 8px; */
 }
 
 /* Company Name */
@@ -790,7 +809,7 @@ section.clients h2 {
 }
 
 /* Swiper Navigation Buttons */
-.swiper-buttons-center {
+/* .swiper-buttons-center {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -819,8 +838,52 @@ section.clients h2 {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background: #0a4c9d;
+} */
+ /* Center wrapper */
+/* Remove Swiper's built-in arrows completely */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none !important;
 }
 
+/* Center wrapper */
+.swiper-buttons-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.swiper-button-prev svg {
+  transform: scaleX(-1);
+}
+/* Common button styles */
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #073b7a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+/* Icon styling */
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 20px;
+  color: #fff;
+  pointer-events: none;
+  /* ensure click works */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #0a4c9d;
+}
 @media (max-width: 576px) {
   .client-card {
     width: 160px;
@@ -862,6 +925,7 @@ section.clients h2 {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  padding: 10px;
 }
 
 .swiper-buttons-center .swiper-button-prev::after,
